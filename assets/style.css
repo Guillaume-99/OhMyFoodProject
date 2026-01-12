@@ -16,8 +16,7 @@ body {
     align-items: center;
     background-color: #EAEAEA;
     height: 50px;
-    box-shadow: inset 0 3px 5px #babababf,
-        0 4px 2px #babababf;
+    box-shadow: inset 0 3px 5px #babababf
 }
 
 .town::before {
@@ -32,7 +31,37 @@ body {
     font-weight: 500;
 }
 
-h2 {
+.discovery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eaeaea77;
+    box-shadow: inset 0 4px 2px #babababf;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.reservation {
     font-family: "Roboto";
     font-weight: 600;
+    margin: 0px;
+    width: 255px;
+    text-align: center;
+}
+
+.discovery p {
+    font-family: "Roboto";
+    font-weight: 300;
+    text-align: center;
+    width: 300px;
+}
+
+.discovery a {
+    text-decoration: none;
+    font-family: "Roboto";
+    color: white;
+    padding: 10px 15px;
+    border: 0px solid black;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom right, #FF79DA 0%, #9356DC 90%);
 }
