@@ -1,0 +1,38 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo {
+    font-family: "Shrikhand";
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EAEAEA;
+    height: 50px;
+    box-shadow: inset 0 3px 5px #babababf,
+        0 4px 2px #babababf;
+}
+
+.town::before {
+    font-family: "FontAwesome";
+    content: "\f041";
+    margin-right: 0.5rem;
+    color: #353535;
+}
+
+.town {
+    font-family: "Roboto";
+    font-weight: 500;
+}
+
+h2 {
+    font-family: "Roboto";
+    font-weight: 600;
+}
