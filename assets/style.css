@@ -3,6 +3,8 @@ body {
     padding: 0px;
 }
 
+/************ EN-TETE ************/
+
 .logo {
     font-family: "Shrikhand";
     font-weight: 400;
@@ -64,4 +66,86 @@ body {
     border: 0px solid black;
     border-radius: 20px;
     background-image: linear-gradient(to bottom right, #FF79DA 0%, #9356DC 90%);
+    box-shadow: 2px 3px 2px #babababf;
+}
+
+/************ Main ************/
+
+.functioning {
+    font-family: "Roboto";
+    font-weight: 500;
+}
+
+.title {
+    font-family: "Roboto";
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.tuto {
+    display: flex;
+    margin-left: 20px;
+    position: relative;
+}
+
+.def {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid black;
+    border-radius: 20px;
+    height: 70px;
+    width: 300px;
+    margin-top: 0;
+    margin-left: 12px;
+    background-color: #eaeaea77;
+    box-shadow: 0 4px 10px #babababf;
+}
+
+.def1::before {
+    position: absolute;
+    left: 50px;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 700;
+    content: "\f3ce";
+    color: #8f8f8f;
+    margin-right: 5px
+}
+
+.def2::before {
+    position: absolute;
+    left: 50px;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f0c9";
+    color: #8f8f8f;
+    margin-right: 7px;
+}
+
+.def3::before {
+    position: absolute;
+    left: 50px;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f54e";
+    color: #9356DC;
+    margin-right: 7px;
+}
+
+
+.numbers {
+    position: absolute;
+    border: 0px solid black;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    text-align: center;
+    margin: 0;
+    bottom: 40px;
+    background-color: #9356DC;
+    color: white;
+}
+
+.numbers p {
+    margin: 3px 0px;
 }
