@@ -177,6 +177,13 @@ body {
     box-shadow: 0 1px 3px #babababf;
 }
 
+.card a {
+    text-decoration: none;
+    color: black;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
 .news {
     position: absolute;
     z-index: 2;
