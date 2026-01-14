@@ -163,6 +163,8 @@ body {
 }
 
 .restaurants h2 {
+    align-self: baseline;
+    margin-left: 17px;
     font-family: "Roboto";
 }
 
@@ -224,16 +226,21 @@ body {
 
 .heart-empty i {
     font-size: 2em;
+    transition: color 0.7s;
 }
 
-.like-button {
-    border: none;
-    background: transparent;
-    padding: 0;
+.like-checkbox {
+    display: none;
+}
+
+.like-checkbox:checked+.like-label i {
+    color: #FF79DA;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+.like-label {
     cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
 }
 
 /************ Footer ************/
