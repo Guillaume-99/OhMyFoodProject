@@ -56,12 +56,29 @@ body {
   background-color: #edecec;
   margin-top: -60px;
   height: 1000px;
+  /************** A supprimer ***************************/
 }
 .menu h2 {
   font-family: "Shrikhand";
   font-weight: 400;
   font-size: 1.7em;
   margin-left: 20px;
+}
+.menu__title {
+  font-family: "Roboto";
+  font-weight: 350;
+  display: inline-block;
+  position: relative;
+  margin-left: 15px;
+}
+.menu__title::after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  background-color: #99E2D0;
+  height: 3px;
+  left: 0;
+  bottom: -4px;
 }
 
 /*# sourceMappingURL=la_palette_du_gout.css.map */
