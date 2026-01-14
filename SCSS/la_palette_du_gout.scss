@@ -1,0 +1,78 @@
+/************ EN-TETE ************/
+
+@mixin title {
+    font-family: "Shrikhand";
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+}
+
+.nav-head {
+    height: 60px;
+    width: inherit;
+
+    &__link {
+        font-size: 2em;
+        color: #353535;
+        position: absolute;
+        top: 27px;
+        left: 25px;
+
+        &--logo {
+            text-align: center;
+            @include title;
+        }
+    }
+}
+
+/************ Main ************/
+
+.restaurant {
+    display: flex;
+    flex-direction: column;
+
+    &__banner {
+        height: 275px;
+        object-fit: cover;
+        object-position: 50% 90%;
+        z-index: -1;
+    }
+}
+
+.heart {
+    display: flex;
+
+    & i {
+        margin: 30px 0 0 20px;
+        font-size: 1.5em;
+    }
+
+    &__like {
+        display: none;
+    }
+
+    &__like:checked+.like-label i {
+        color: #FF79DA;
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+    }
+
+    .like-label {
+        cursor: pointer;
+    }
+}
+
+.menu {
+    border-radius: 40px 40px 0 0;
+    background-color: #edecec;
+    margin-top: -60px;
+    height: 1000px;
+
+    & h2 {
+        @include title;
+        font-size: 1.7em;
+        margin-left: 20px;
+    }
+}

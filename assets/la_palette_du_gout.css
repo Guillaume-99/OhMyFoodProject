@@ -1,3 +1,67 @@
+/************ EN-TETE ************/
+body {
+  margin: 0;
+}
 
+.nav-head {
+  height: 60px;
+  width: inherit;
+}
+.nav-head__link {
+  font-size: 2em;
+  color: #353535;
+  position: absolute;
+  top: 27px;
+  left: 25px;
+}
+.nav-head__link--logo {
+  text-align: center;
+  font-family: "Shrikhand";
+  font-weight: 400;
+}
+
+/************ Main ************/
+.restaurant {
+  display: flex;
+  flex-direction: column;
+}
+.restaurant__banner {
+  height: 275px;
+  object-fit: cover;
+  object-position: 50% 90%;
+  z-index: -1;
+}
+
+.heart {
+  display: flex;
+}
+.heart i {
+  margin: 30px 0 0 20px;
+  font-size: 1.5em;
+}
+.heart__like {
+  display: none;
+}
+.heart__like:checked + .like-label i {
+  color: #FF79DA;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+.heart .like-label {
+  cursor: pointer;
+}
+
+.menu {
+  border-radius: 40px 40px 0 0;
+  background-color: #edecec;
+  margin-top: -60px;
+  height: 1000px;
+}
+.menu h2 {
+  font-family: "Shrikhand";
+  font-weight: 400;
+  font-size: 1.7em;
+  margin-left: 20px;
+}
 
 /*# sourceMappingURL=la_palette_du_gout.css.map */
