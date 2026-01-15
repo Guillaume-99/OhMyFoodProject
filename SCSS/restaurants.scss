@@ -64,7 +64,9 @@ body {
     }
 
     &__like:checked+.like-label i {
-        color: #FF79DA;
+        background-image: linear-gradient(to top, #FF79DA 0%, #9356DC 90%);
+        background-clip: text;
+        color: transparent;
         font-family: "Font Awesome 6 Free";
         font-weight: 900;
     }
