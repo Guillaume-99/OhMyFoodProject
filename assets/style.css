@@ -63,7 +63,6 @@ body {
     font-family: "Roboto";
     color: white;
     padding: 10px 15px;
-    border: 0px solid black;
     border-radius: 20px;
     background-image: linear-gradient(to bottom right, #FF79DA 0%, #9356DC 90%);
     box-shadow: 2px 3px 2px #babababf;
@@ -76,6 +75,7 @@ body {
 .functioning {
     font-family: "Roboto";
     font-weight: 500;
+    padding-bottom: 30px;
 }
 
 .title {
