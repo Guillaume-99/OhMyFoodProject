@@ -114,15 +114,57 @@ body {
 }
 .menu a {
   text-decoration: none;
+  color: white;
   text-align: center;
   font-family: "Roboto";
   font-weight: 350;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 20px;
+  padding: 15px 15px;
+  border-radius: 30px;
   background-image: linear-gradient(to bottom right, #FF79DA 0%, #9356DC 90%);
   box-shadow: 2px 3px 2px rgba(186, 186, 186, 0.7490196078);
   width: 150px;
+  margin: 25px 0 30px 0;
+}
+
+/************ Footer ************/
+footer {
+  background-color: #353535;
+  padding-bottom: 20px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3px;
+  margin-left: 20px;
+  color: white;
+  font-family: "Roboto";
+}
+
+article a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 10px;
+}
+
+article h3 {
+  font-family: "Shrikhand";
+  font-weight: 100;
+}
+
+.icone-footer {
+  display: flex;
+  align-items: center;
+  margin: 0 0 10px 0;
+  gap: 10px;
+}
+
+.icone-footer i {
+  font-size: 0.7em;
+}
+
+.forks i {
+  margin-right: 4px;
 }
 
 /*# sourceMappingURL=la_palette_du_gout.css.map */
