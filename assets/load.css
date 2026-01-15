@@ -1,3 +1,63 @@
+/************** Loader conteneur ***************/
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  animation: fadeOut 0.5s 2s forwards;
+}
 
+/**************** Animation disparition ***********/
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.loader__dots {
+  display: flex;
+  gap: 15px;
+}
+
+.loader__dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  animation: bounce 0.6s infinite alternate;
+}
+
+.loader__dot--1 {
+  background-color: #9356DC;
+  animation-delay: 0s;
+}
+
+.loader__dot--2 {
+  background-color: #FF79DA;
+  animation-delay: 0.2s;
+}
+
+.loader__dot--3 {
+  background-color: #99E2D0;
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
 
 /*# sourceMappingURL=load.css.map */
