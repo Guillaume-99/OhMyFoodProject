@@ -36,7 +36,7 @@ body {
   display: flex;
 }
 .heart i {
-  margin: 30px 0 0 20px;
+  margin: 30px 0 0 40px;
   font-size: 1.5em;
 }
 .heart__like {
@@ -52,24 +52,28 @@ body {
 }
 
 .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 40px 40px 0 0;
   background-color: #edecec;
   margin-top: -60px;
-  height: 1000px;
-  /************** A supprimer ***************************/
 }
 .menu h2 {
   font-family: "Shrikhand";
   font-weight: 400;
   font-size: 1.7em;
-  margin-left: 20px;
+  margin-left: -30px;
+  margin-bottom: 0;
 }
 .menu__title {
   font-family: "Roboto";
   font-weight: 350;
   display: inline-block;
   position: relative;
+  align-self: baseline;
   margin-left: 15px;
+  margin-top: 30px;
 }
 .menu__title::after {
   content: "";
@@ -79,6 +83,46 @@ body {
   height: 3px;
   left: 0;
   bottom: -4px;
+}
+.menu__dish {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px 10px 0px;
+  padding: 0 15px 0 15px;
+  box-shadow: 0 4px 10px rgba(186, 186, 186, 0.7490196078);
+  border-radius: 20px;
+  width: 320px;
+}
+.menu__dish--meal {
+  font-family: "Roboto";
+  font-weight: 350;
+  padding: 0;
+}
+.menu__dish--meal h3 {
+  margin: 10px 0 0 0;
+}
+.menu__dish--meal p {
+  margin: 5px 0 10px 0;
+  font-size: 0.9em;
+}
+.menu__dish--price {
+  font-family: "Roboto";
+  font-weight: 350;
+  font-weight: 500;
+  margin-top: 30px;
+}
+.menu a {
+  text-decoration: none;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 350;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  background-image: linear-gradient(to bottom right, #FF79DA 0%, #9356DC 90%);
+  box-shadow: 2px 3px 2px rgba(186, 186, 186, 0.7490196078);
+  width: 150px;
 }
 
 /*# sourceMappingURL=la_palette_du_gout.css.map */

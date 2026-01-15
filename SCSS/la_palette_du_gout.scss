@@ -50,7 +50,7 @@ body {
     display: flex;
 
     & i {
-        margin: 30px 0 0 20px;
+        margin: 30px 0 0 40px;
         font-size: 1.5em;
     }
 
@@ -70,23 +70,27 @@ body {
 }
 
 .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-radius: 40px 40px 0 0;
     background-color: #edecec;
     margin-top: -60px;
-    height: 1000px;
-    /************** A supprimer ***************************/
 
     & h2 {
         @include title;
         font-size: 1.7em;
-        margin-left: 20px;
+        margin-left: -30px;
+        margin-bottom: 0;
     }
 
     &__title {
         @include sentence;
         display: inline-block;
         position: relative;
+        align-self: baseline;
         margin-left: 15px;
+        margin-top: 30px;
     }
 
     &__title::after {
@@ -98,4 +102,48 @@ body {
         left: 0;
         bottom: -4px;
     }
+
+    &__dish {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0px 10px 0px;
+        padding: 0 15px 0 15px;
+        box-shadow: 0 4px 10px #babababf;
+        border-radius: 20px;
+        width: 320px;
+
+        &--meal {
+            @include sentence;
+            padding: 0;
+
+            & h3 {
+                margin: 10px 0 0 0;
+            }
+
+            & p {
+                margin: 5px 0 10px 0;
+                font-size: 0.9em;
+            }
+        }
+
+        &--price {
+            @include sentence;
+            font-weight: 500;
+            margin-top: 30px;
+        }
+    }
+
+    & a {
+        text-decoration: none;
+        text-align: center;
+        @include sentence;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 20px;
+        background-image: linear-gradient(to bottom right, #FF79DA 0%, #9356DC 90%);
+        box-shadow: 2px 3px 2px #babababf;
+        width: 150px;
+    }
+
 }
