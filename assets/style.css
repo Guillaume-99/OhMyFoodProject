@@ -294,3 +294,78 @@ article h3 {
 .forks i {
     margin-right: 4px;
 }
+
+
+/************** Responsiv Desktop ************/
+
+@media screen and (min-width: 1020px) {
+
+
+    /************** EN TETE *********************/
+
+    .discovery p,
+    .reservation {
+
+        min-width: 980px;
+    }
+
+
+    .functioning {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+    }
+
+    .functioning h2 {
+        width: 970px;
+    }
+
+    .tuto-area {
+        display: flex;
+    }
+
+    /************** MAIN *********************/
+
+    .restaurants-area,
+    .restaurants-area-2 {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+        gap: 70px;
+    }
+
+    .restaurants h2 {
+        align-self: unset;
+        width: 1090px;
+    }
+
+    .card {
+        width: 500px;
+    }
+
+    .card img {
+        width: 100%;
+        object-position: 50% 55%;
+    }
+
+    /************** FOOTER *********************/
+
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    article {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 60px;
+    }
+
+    article h3 {
+        order: 2;
+        margin-right: 50px;
+    }
+
+}
