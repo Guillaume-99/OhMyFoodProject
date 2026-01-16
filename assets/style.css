@@ -370,7 +370,7 @@ article h3 {
 
 }
 
-@media screen and (min-width:450px) {
+@media screen and (min-width:450px) and (max-width:1019px) {
 
     .functioning {
         display: flex;
