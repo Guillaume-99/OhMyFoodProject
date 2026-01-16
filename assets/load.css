@@ -10,7 +10,7 @@
   justify-content: center;
   align-items: center;
   z-index: 3;
-  animation: fadeOut 0.5s 2s forwards;
+  animation: fadeOut 0.5s 0s forwards;
 }
 
 /**************** Animation disparition ***********/
