@@ -364,14 +364,16 @@ footer {
     .restaurants-area,
     .restaurants-area-2 {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         flex-direction: row;
-        margin-bottom: 10px;
         gap: 70px;
     }
 
     .restaurants h2 {
         align-self: unset;
         width: 1090px;
+        margin-left: 64px;
     }
 
     .card {
@@ -422,7 +424,7 @@ footer {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        gap: 50px;
+        gap: 30px;
     }
 
     .foot h3 {

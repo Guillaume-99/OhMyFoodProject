@@ -355,8 +355,13 @@ footer {
             width: 600px;
         }
 
-        &__title {
-            margin-left: 200px;
+        .entry,
+        .dish,
+        .desert {
+
+            & p {
+                align-self: baseline;
+            }
         }
 
         &__dish {
@@ -404,9 +409,12 @@ footer {
         }
     }
 
-    .menu {
-        &__title {
-            margin-left: 27%;
+    .entry,
+    .dish,
+    .desert {
+
+        & p {
+            align-self: baseline;
         }
     }
 
@@ -417,9 +425,10 @@ footer {
 
     .foot {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         align-items: center;
-        gap: 70px;
+        gap: 40px;
         margin-right: 50px;
         margin-top: 40px;
         height: 100%;

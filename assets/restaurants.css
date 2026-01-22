@@ -292,8 +292,10 @@ footer {
   .menu .dish-label {
     width: 600px;
   }
-  .menu__title {
-    margin-left: 200px;
+  .menu .entry p,
+  .menu .dish p,
+  .menu .desert p {
+    align-self: baseline;
   }
   .menu__dish:hover .menu__dish--meal {
     max-width: calc(100% - 90px);
@@ -327,8 +329,10 @@ footer {
   .restaurant__banner {
     object-position: 50% 67%;
   }
-  .menu__title {
-    margin-left: 27%;
+  .entry p,
+  .dish p,
+  .desert p {
+    align-self: baseline;
   }
   footer {
     display: flex;
@@ -336,9 +340,10 @@ footer {
   }
   .foot {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    gap: 70px;
+    gap: 40px;
     margin-right: 50px;
     margin-top: 40px;
     height: 100%;
