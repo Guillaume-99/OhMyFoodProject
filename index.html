@@ -34,14 +34,15 @@
     <header>
         <h1 class="logo">Ohmyfood</h1>
         <section class="location">
-            <p class="town">
-                Paris, Belleville
-            </p>
+            <form class="town" method="get" action="#">
+                <input type="search" name="search-bar" id="search-bar" placeholder="Paris, Belleville">
+
+            </form>
         </section>
         <nav class="discovery">
             <h2 class="reservation">Réservez le menu qui vous convient</h2>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <a href="#restaurants">Explorer nos restaurants</a>
+            <button class="button">Explorer nos restaurants</button>
         </nav>
     </header>
 
@@ -76,7 +77,7 @@
             </section>
         </section>
 
-        <section class="restaurants">
+        <section class="restaurants" id="dinner">
 
             <h2 id="restaurant__banner">Restaurants</h2>
 

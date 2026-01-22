@@ -18,8 +18,10 @@ body {
     align-items: center;
     background-color: #EAEAEA;
     height: 50px;
-    box-shadow: inset 0 3px 5px #babababf
+    box-shadow: inset 0 3px 5px #babababf;
+    padding-left: 40px;
 }
+
 
 .town::before {
     font-family: "FontAwesome";
@@ -28,9 +30,14 @@ body {
     color: #353535;
 }
 
-.town {
+#search-bar {
     font-family: "Roboto";
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 1em;
+    outline: none;
+    border: none;
+    background-color: #EAEAEA;
+    margin-left: 10px;
 }
 
 .discovery {
@@ -58,14 +65,32 @@ body {
     width: 300px;
 }
 
-.discovery a {
-    text-decoration: none;
+.button {
+    border: none;
     font-family: "Roboto";
     color: white;
     padding: 10px 15px;
     border-radius: 20px;
     background-image: linear-gradient(to bottom right, #FF79DA 0%, #9356DC 90%);
-    box-shadow: 2px 3px 2px #babababf;
+    box-shadow: 2px 7px 2px #babababf;
+    cursor: pointer;
+}
+
+.button:hover {
+    animation: bouton 0.6s ease;
+    background-image: linear-gradient(to bottom right, #ff79d9be 0%, #9356DCbe 90%);
+}
+
+@keyframes bouton {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-3%);
+    }
 }
 
 /************ Main ************/
@@ -101,7 +126,7 @@ body {
     margin-top: 0;
     margin-left: 12px;
     background-color: #eaeaea77;
-    box-shadow: 0 4px 10px #babababf;
+    box-shadow: 0 7px 10px #babababf;
 }
 
 .def1::before {
@@ -242,6 +267,14 @@ body {
 }
 
 .like-checkbox:checked+.like-label i {
+    background-image: linear-gradient(to top, #FF79DA 0%, #9356DC 90%);
+    background-clip: text;
+    color: transparent;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+.like-checkbox:hover+.like-label i {
     background-image: linear-gradient(to top, #FF79DA 0%, #9356DC 90%);
     background-clip: text;
     color: transparent;
