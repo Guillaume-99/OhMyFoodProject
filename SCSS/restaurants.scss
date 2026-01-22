@@ -21,6 +21,14 @@
     text-overflow: ellipsis;
 }
 
+@mixin heart {
+    background-image: linear-gradient(to top, #FF79DA 0%, #9356DC 90%);
+    background-clip: text;
+    color: transparent;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
 body {
     margin: 0;
 }
@@ -63,6 +71,7 @@ body {
     & i {
         margin: 30px 0 0 40px;
         font-size: 1.5em;
+        transition: color 0.7s;
     }
 
     &__like {
@@ -70,17 +79,43 @@ body {
     }
 
     &__like:checked+.like-label i {
-        background-image: linear-gradient(to top, #FF79DA 0%, #9356DC 90%);
-        background-clip: text;
-        color: transparent;
-        font-family: "Font Awesome 6 Free";
-        font-weight: 900;
+        @include heart;
+    }
+
+    &__like:hover+.like-label i {
+        @include heart;
     }
 
     .like-label {
         cursor: pointer;
     }
 }
+
+.entry {
+    animation: slide 1s ease;
+}
+
+.dish {
+    animation: slide 2s ease;
+}
+
+.desert {
+    animation: slide 3s ease;
+}
+
+
+@keyframes slide {
+
+    0%,
+    100% {
+        transform: translateX(0%);
+    }
+
+    0% {
+        transform: translateX(-35%);
+    }
+}
+
 
 .menu {
     display: flex;
@@ -167,7 +202,12 @@ body {
                 z-index: -1;
                 color: white;
                 font-size: 1.5rem;
+                display: none;
             }
+        }
+
+        &:hover i {
+            display: unset;
         }
 
         &:hover &--meal {
@@ -180,7 +220,7 @@ body {
         }
 
         &:hover &--price {
-            transform: translateX(-60px)
+            transform: translateX(-60px);
         }
 
         /************** Checkbox dishes *********************/
@@ -206,6 +246,10 @@ body {
         .dish-checkbox:checked+.dish-label .menu__dish--check {
             width: 60px;
             z-index: 1;
+
+            & i {
+                display: unset;
+            }
         }
 
         .dish-checkbox:checked+.dish-label .menu__dish--price {
