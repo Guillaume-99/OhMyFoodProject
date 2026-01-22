@@ -65,6 +65,10 @@ body {
     }
 }
 
+.menu-area {
+    -webkit-tap-highlight-color: transparent;
+}
+
 .heart {
     display: flex;
 
@@ -79,10 +83,6 @@ body {
     }
 
     &__like:checked+.like-label i {
-        @include heart;
-    }
-
-    &__like:hover+.like-label i {
         @include heart;
     }
 
@@ -210,18 +210,6 @@ body {
             display: unset;
         }
 
-        &:hover &--meal {
-            max-width: calc(100% - 90px);
-        }
-
-        &:hover &--check {
-            width: 60px;
-            z-index: 1;
-        }
-
-        &:hover &--price {
-            transform: translateX(-60px);
-        }
 
         /************** Checkbox dishes *********************/
 
@@ -353,6 +341,11 @@ article h3 {
         }
     }
 
+    .heart {
+        &__like:hover+.like-label i {
+            @include heart;
+        }
+    }
 
 
     .menu {
@@ -364,6 +357,21 @@ article h3 {
 
         &__title {
             margin-left: 200px;
+        }
+
+        &__dish {
+            &:hover &--meal {
+                max-width: calc(100% - 90px);
+            }
+
+            &:hover &--check {
+                width: 60px;
+                z-index: 1;
+            }
+
+            &:hover &--price {
+                transform: translateX(-60px);
+            }
         }
     }
 

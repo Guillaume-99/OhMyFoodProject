@@ -32,6 +32,10 @@ body {
   z-index: -1;
 }
 
+.menu-area {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .heart {
   display: flex;
 }
@@ -44,13 +48,6 @@ body {
   display: none;
 }
 .heart__like:checked + .like-label i {
-  background-image: linear-gradient(to top, #FF79DA 0%, #9356DC 90%);
-  background-clip: text;
-  color: transparent;
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-}
-.heart__like:hover + .like-label i {
   background-image: linear-gradient(to top, #FF79DA 0%, #9356DC 90%);
   background-clip: text;
   color: transparent;
@@ -171,16 +168,6 @@ body {
 .menu__dish:hover i {
   display: unset;
 }
-.menu__dish:hover .menu__dish--meal {
-  max-width: calc(100% - 90px);
-}
-.menu__dish:hover .menu__dish--check {
-  width: 60px;
-  z-index: 1;
-}
-.menu__dish:hover .menu__dish--price {
-  transform: translateX(-60px);
-}
 .menu__dish {
   /************** Checkbox dishes *********************/
 }
@@ -292,6 +279,13 @@ article h3 {
     height: 500px;
     object-position: 50% 60%;
   }
+  .heart__like:hover + .like-label i {
+    background-image: linear-gradient(to top, #FF79DA 0%, #9356DC 90%);
+    background-clip: text;
+    color: transparent;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+  }
   .menu {
     width: 1020px;
   }
@@ -300,6 +294,16 @@ article h3 {
   }
   .menu__title {
     margin-left: 200px;
+  }
+  .menu__dish:hover .menu__dish--meal {
+    max-width: calc(100% - 90px);
+  }
+  .menu__dish:hover .menu__dish--check {
+    width: 60px;
+    z-index: 1;
+  }
+  .menu__dish:hover .menu__dish--price {
+    transform: translateX(-60px);
   }
   footer {
     display: flex;
