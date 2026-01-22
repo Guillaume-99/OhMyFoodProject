@@ -294,7 +294,7 @@ footer {
     padding-bottom: 20px;
 }
 
-article {
+.foot {
     display: flex;
     flex-direction: column;
     padding-top: 3px;
@@ -303,13 +303,13 @@ article {
     font-family: "Roboto";
 }
 
-article a {
+.foot a {
     text-decoration: none;
     color: white;
     margin-bottom: 10px;
 }
 
-article h3 {
+.foot h3 {
     font-family: "Shrikhand";
     font-weight: 100;
 }
@@ -390,14 +390,14 @@ article h3 {
         flex-direction: row-reverse;
     }
 
-    article {
+    .foot {
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 60px;
     }
 
-    article h3 {
+    .foot h3 {
         order: 2;
         margin-right: 50px;
     }
@@ -417,7 +417,7 @@ article h3 {
         width: 350px;
     }
 
-    article {
+    .foot {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -425,7 +425,7 @@ article h3 {
         gap: 50px;
     }
 
-    article h3 {
+    .foot h3 {
         order: 2;
 
     }
