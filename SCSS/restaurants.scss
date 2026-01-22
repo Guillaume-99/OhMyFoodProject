@@ -260,18 +260,38 @@ body {
 
     /******************* Boutton commande ******************/
 
-    & a {
+    & .order {
         @include link;
-        text-align: center;
         @include sentence;
         padding: 15px 15px;
+        border: none;
         border-radius: 30px;
         background-image: linear-gradient(to bottom right, #FF79DA 0%, #9356DC 90%);
-        box-shadow: 2px 3px 2px #babababf;
+        box-shadow: 2px 5px 2px #babababf;
         width: 150px;
         margin: 25px 0 30px 0;
+
+        &:hover {
+
+            animation: bouton 0.6s ease;
+            background-image: linear-gradient(to bottom right, #ff79d9be 0%, #9356DCbe 90%);
+            box-shadow: 2px 8px 2px #babababf;
+
+        }
     }
 
+}
+
+@keyframes bouton {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-3%);
+    }
 }
 
 /************ Footer ************/
