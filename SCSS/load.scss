@@ -16,6 +16,33 @@ $tertiary: #99E2D0;
     align-items: center;
     z-index: 3;
     animation: fadeOut 0.5s 3s forwards;
+
+    &__dots {
+        display: flex;
+        gap: 15px;
+    }
+
+    &__dot {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        animation: bounce 0.6s infinite alternate;
+    }
+
+    &__dot--1 {
+        background-color: $primary; // violet
+        animation-delay: 0s;
+    }
+
+    &__dot--2 {
+        background-color: $secondary; // rose
+        animation-delay: 0.2s;
+    }
+
+    &__dot--3 {
+        background-color: $tertiary; // vert
+        animation-delay: 0.4s;
+    }
 }
 
 /**************** Animation disparition ***********/
@@ -32,32 +59,7 @@ $tertiary: #99E2D0;
     }
 }
 
-.loader__dots {
-    display: flex;
-    gap: 15px;
-}
 
-.loader__dot {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    animation: bounce 0.6s infinite alternate;
-}
-
-.loader__dot--1 {
-    background-color: $primary; // violet
-    animation-delay: 0s;
-}
-
-.loader__dot--2 {
-    background-color: $secondary; // rose
-    animation-delay: 0.2s;
-}
-
-.loader__dot--3 {
-    background-color: $tertiary; // vert
-    animation-delay: 0.4s;
-}
 
 @keyframes bounce {
     0% {
