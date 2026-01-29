@@ -167,12 +167,17 @@ body {
             overflow: hidden;
             width: 0;
 
-            & h3 {
+            & .h3 {
+                display: block;
                 margin: 10px 0 0 0;
                 @include dot;
+                @include sentence;
+                font-weight: 700;
+                font-size: 1.3em;
             }
 
-            & p {
+            & .p {
+                display: block;
                 margin: 5px 0 10px 0;
                 font-size: 0.9em;
                 @include dot;
@@ -226,7 +231,7 @@ body {
         .dish-label {
             position: relative;
             display: flex;
-            justify-content: flex-start;
+            justify-content: space-between;
             align-items: center;
             margin: 10px 0px 10px 0px;
             padding: 0 10px 0 15px;
