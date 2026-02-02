@@ -40,6 +40,11 @@ body {
     margin-left: 10px;
 }
 
+#search-bar::placeholder {
+    color: black;
+    opacity: 1;
+}
+
 .discovery {
     display: flex;
     flex-direction: column;
@@ -241,12 +246,12 @@ body {
 
 .card-description {
     display: flex;
-    justify-content: space-between;
 }
 
 .card-txt {
     font-family: "Roboto";
     font-weight: 270;
+    width: 90%;
 }
 
 .card-txt h3,
@@ -341,6 +346,15 @@ footer {
     .reservation {
 
         min-width: 980px;
+    }
+
+    .reservation {
+        font-size: 40px;
+    }
+
+    .discovery,
+    .location {
+        box-shadow: none;
     }
 
 
