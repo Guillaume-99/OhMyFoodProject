@@ -261,6 +261,7 @@ body {
 
 .heart-empty {
     margin: 17px 30px 0 0;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .heart-empty i {
@@ -280,13 +281,6 @@ body {
     font-weight: 900;
 }
 
-.like-checkbox:hover+.like-label i {
-    background-image: linear-gradient(to top, #FF79DA 0%, #9356DC 90%);
-    background-clip: text;
-    color: transparent;
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-}
 
 .like-label {
     cursor: pointer;
@@ -397,6 +391,14 @@ footer {
     .card img {
         width: 100%;
         object-position: 50% 55%;
+    }
+
+    .like-checkbox:hover+.like-label i {
+        background-image: linear-gradient(to top, #FF79DA 0%, #9356DC 90%);
+        background-clip: text;
+        color: transparent;
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
     }
 
     /************** FOOTER *********************/
