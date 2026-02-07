@@ -308,11 +308,6 @@ footer {
   .menu .dish-label {
     width: 600px;
   }
-  .menu .entry p,
-  .menu .dish p,
-  .menu .desert p {
-    align-self: baseline;
-  }
   .menu__dish:hover .menu__dish--meal {
     max-width: calc(100% - 90px);
   }
@@ -323,25 +318,8 @@ footer {
   .menu__dish:hover .menu__dish--price {
     transform: translateX(-60px);
   }
-  footer {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  .foot {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 70px;
-    margin-right: 70px;
-    margin-top: 40px;
-    height: 100%;
-  }
-  .foot h3 {
-    order: 2;
-    margin-top: 10px;
-  }
 }
-@media screen and (min-width: 450px) and (max-width: 1019px) {
+@media screen and (min-width: 450px) {
   .restaurant__banner {
     object-position: 50% 67%;
   }
