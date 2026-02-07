@@ -42,7 +42,7 @@ body {
 .heart i {
   margin: 30px 0 0 20px;
   font-size: 1.5em;
-  transition: color 0.7s;
+  transition: color 0s;
 }
 .heart__like {
   display: none;
@@ -53,6 +53,7 @@ body {
   color: transparent;
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
+  transition: color 0.5s, font-weight 0.5s linear;
 }
 .heart .like-label {
   cursor: pointer;
@@ -301,6 +302,7 @@ footer {
     color: transparent;
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
+    transition: color 0.7s, font-weight 0.7s linear;
   }
   .menu {
     width: 1020px;

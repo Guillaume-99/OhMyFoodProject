@@ -268,7 +268,7 @@ body {
 
 .heart-empty i {
     font-size: 2em;
-    transition: color 0.7s;
+    transition: color 0s;
 }
 
 .like-checkbox {
@@ -281,6 +281,7 @@ body {
     color: transparent;
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
+    transition: color 0.7s, font-weight 0.7s linear;
 }
 
 
@@ -395,8 +396,8 @@ footer {
         background-image: linear-gradient(to top, #FF79DA 0%, #9356DC 90%);
         background-clip: text;
         color: transparent;
-        font-family: "Font Awesome 6 Free";
         font-weight: 900;
+        transition: color 0.7s, font-weight 0.7s linear;
     }
 
     /************** FOOTER *********************/
@@ -426,7 +427,6 @@ footer {
 
     .restaurants h2 {
         align-self: unset;
-        width: 350px;
     }
 
     .foot {
