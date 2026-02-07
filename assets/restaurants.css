@@ -198,6 +198,7 @@ body {
   width: 90%;
   overflow: hidden;
   cursor: pointer;
+  background-color: white;
 }
 .menu__dish .dish-checkbox:checked + .dish-label .menu__dish--check {
   width: 60px;

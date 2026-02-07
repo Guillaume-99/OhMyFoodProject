@@ -240,6 +240,7 @@ body {
             width: 90%;
             overflow: hidden;
             cursor: pointer;
+            background-color: white;
         }
 
         .dish-checkbox:checked+.dish-label .menu__dish--check {
